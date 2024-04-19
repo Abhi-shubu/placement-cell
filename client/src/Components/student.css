@@ -1,0 +1,149 @@
+.popup-overlay {
+    position: fixed;
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .popup {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content {
+    margin-bottom: 40px;
+    
+     
+    }
+    
+    .popup-content button[type="submit"],
+    .popup-content button[type="cancel"] {
+      display: inline-block; /* Display buttons inline */
+      padding: 10px 20px; /* Adjust padding as needed */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1px;
+      margin-left: 800px;
+    }
+    
+    .popup-content button[type="submit"] {
+      background-color: #04AA6D; /* Green background for submit button */
+      color: white;
+       
+    }
+    
+    .popup-content button[type="cancel"] {
+      background-color: #f44336; /* Red background for cancel button */
+      color: white;
+      margin-right: 10px;
+    }
+    
+  /* Optional: Center the form fields */
+  .popup input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  #students {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #students td, #batchs th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #students tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #students tr:hover {background-color: #ddd;}
+  
+  #students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    
+  }
+  .add-student-button {
+  border: none; 
+  background-color: #04AA6D; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+
+.select-container {
+    margin-bottom: 20px; 
+  }
+  
+  
+  #batch {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+  
+  /* Styling the select options */
+  #batch option {
+    padding: 5px; /* Add padding to options for better spacing */
+  }
+  
+
+/* Style for the status dropdown */
+.select-status {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.form-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin-right: 10px;
+}
+
+.form-group label,
+.form-group select,
+.form-group input {
+  margin-bottom: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  min-width: 120px; /* Adjust as needed */
+}
