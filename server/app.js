@@ -38,7 +38,7 @@ mongoose.connect(process.env.CONNECTION_STRING,{
     .catch((err) => {
       console.log(err);
     });
-onst _dirname = path.dirname("");
+csonst _dirname = path.dirname("");
 const buildPath = path.join(__dirname, "../client/build");
 app.use(express.static(buildPath));
 app.get("/*", (_, res) => {
