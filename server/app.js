@@ -38,7 +38,17 @@ mongoose.connect(process.env.CONNECTION_STRING,{
     .catch((err) => {
       console.log(err);
     });
-
+onst _dirname = path.dirname("");
+const buildPath = path.join(__dirname, "../client/build");
+app.use(express.static(buildPath));
+app.get("/*", (_, res) => {
+  res.sendFile(path.join(buildPath, "index.html")),
+    function (err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    };
+});
 app.listen(4000, () => {
     console.log("server is running http://localhost:3000");
   });
