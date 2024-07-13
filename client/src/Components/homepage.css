@@ -1,0 +1,51 @@
+/* Add styles for HomePage */
+
+
+.homepage-content {
+  text-align: center;
+  margin-top: 30px;
+  /* Add margin to create space below Navbar */
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.box h1 {
+  margin: 0;
+}
+
+.batch-box {
+  background-color:  #04AA6D;
+}
+
+.interview-box {
+  background-color: #e0e0e0;
+}
+
+.student-box {
+  background-color: #04AA6D;
+}
+
+.welcome-text {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.options {
+  display: flex;
+  justify-content: space-between; /* Spread boxes evenly */
+}
+
